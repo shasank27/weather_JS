@@ -41,3 +41,109 @@ submit.addEventListener("click", e => {
   e.preventDefault();
   getWeather(city.value);
 });
+
+const updateAllCities = () => {
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=azerbaijan",
+    options,
+  )
+    .then(response => response.json())
+    .then(response => {
+      azerbaijan_feels_like.innerHTML = response.feels_like;
+      azerbaijan_humidity.innerHTML = response.humidity;
+      azerbaijan_max_temp.innerHTML = response.max_temp;
+      azerbaijan_min_temp.innerHTML = response.min_temp;
+      azerbaijan_sunrise.innerHTML = response.sunrise;
+      azerbaijan_sunset.innerHTML = response.sunset;
+      azerbaijan_temp.innerHTML = response.temp;
+      azerbaijan_wind_degree.innerHTML = response.wind_degrees;
+      azerbaijan_wind_speed.innerHTML = response.wind_speed;
+
+      console.log(response);
+    })
+    .catch(err => console.error(err));
+
+  //
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=kolkata",
+    options,
+  )
+    .then(response => response.json())
+    .then(response => {
+      kolkata_feels_like.innerHTML = response.feels_like;
+      kolkata_humidity.innerHTML = response.humidity;
+      kolkata_max_temp.innerHTML = response.max_temp;
+      kolkata_min_temp.innerHTML = response.min_temp;
+      kolkata_sunrise.innerHTML = response.sunrise;
+      kolkata_sunset.innerHTML = response.sunset;
+      kolkata_temp.innerHTML = response.temp;
+      kolkata_wind_degree.innerHTML = response.wind_degrees;
+      kolkata_wind_speed.innerHTML = response.wind_speed;
+
+      console.log(response);
+    })
+    .catch(err => console.error(err));
+
+  //
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=london",
+    options,
+  )
+    .then(response => response.json())
+    .then(response => {
+      london_feels_like.innerHTML = response.feels_like;
+      london_humidity.innerHTML = response.humidity;
+      london_max_temp.innerHTML = response.max_temp;
+      london_min_temp.innerHTML = response.min_temp;
+      london_sunrise.innerHTML = response.sunrise;
+      london_sunset.innerHTML = response.sunset;
+      london_temp.innerHTML = response.temp;
+      london_wind_degree.innerHTML = response.wind_degrees;
+      london_wind_speed.innerHTML = response.wind_speed;
+
+      console.log(response);
+    })
+    .catch(err => console.error(err));
+
+  //
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=chennai",
+    options,
+  )
+    .then(response => response.json())
+    .then(response => {
+      chennai_feels_like.innerHTML = response.feels_like;
+      chennai_humidity.innerHTML = response.humidity;
+      chennai_max_temp.innerHTML = response.max_temp;
+      chennai_min_temp.innerHTML = response.min_temp;
+      chennai_sunrise.innerHTML = response.sunrise;
+      chennai_sunset.innerHTML = response.sunset;
+      chennai_temp.innerHTML = response.temp;
+      chennai_wind_degree.innerHTML = response.wind_degrees;
+      chennai_wind_speed.innerHTML = response.wind_speed;
+
+      console.log(response);
+    })
+    .catch(err => console.error(err));
+
+  //
+  fetch(
+    "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=boston",
+    options,
+  )
+    .then(response => response.json())
+    .then(response => {
+      boston_feels_like.innerHTML = response.feels_like;
+      boston_humidity.innerHTML = response.humidity;
+      boston_max_temp.innerHTML = response.max_temp;
+      boston_min_temp.innerHTML = response.min_temp;
+      boston_sunrise.innerHTML = response.sunrise;
+      boston_sunset.innerHTML = response.sunset;
+      boston_temp.innerHTML = response.temp;
+      boston_wind_degree.innerHTML = response.wind_degrees;
+      boston_wind_speed.innerHTML = response.wind_speed;
+
+      console.log(response);
+    })
+    .catch(err => console.error(err));
+};
