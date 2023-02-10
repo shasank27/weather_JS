@@ -148,3 +148,33 @@ const updateAllCities = () => {
 };
 
 updateAllCities();
+
+// add effects
+card1.addEventListener("mouseover", e => {
+  document.getElementById("card-header1").classList.add("text-bg-primary");
+  document.getElementById("card1").classList.add("border-primary");
+});
+
+card2.addEventListener("mouseover", e => {
+  document.getElementById("card-header2").classList.add("text-bg-primary");
+  document.getElementById("card2").classList.add("border-primary");
+});
+card3.addEventListener("mouseover", e => {
+  document.getElementById("card-header3").classList.add("text-bg-primary");
+  document.getElementById("card3").classList.add("border-primary");
+});
+
+// remove effects
+card1.addEventListener("mouseleave", e => {
+  document.getElementById("card-header1").classList.remove("text-bg-primary");
+  document.getElementById("card1").classList.remove("border-primary");
+});
+
+card2.addEventListener("mouseleave", e => {
+  document.getElementById("card-header2").classList.remove("text-bg-primary");
+  document.getElementById("card2").classList.remove("border-primary");
+});
+card3.addEventListener("mouseleave", e => {
+  document.getElementById("card-header3").classList.remove("text-bg-primary");
+  document.getElementById("card3").classList.remove("border-primary");
+});
