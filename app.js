@@ -35,7 +35,6 @@ const getWeather = city => {
 };
 
 getWeather("Delhi");
-
 // const search = document.getElementsByTagName("searchCity");
 submit.addEventListener("click", e => {
   e.preventDefault();
@@ -147,3 +146,5 @@ const updateAllCities = () => {
     })
     .catch(err => console.error(err));
 };
+
+updateAllCities();
